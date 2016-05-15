@@ -80,6 +80,9 @@ section {
         section #ranking ul li:hover .box-votacao {
           visibility: visible;
           right: -170px; }
+          @media screen and (max-width: 375px) {
+            section #ranking ul li:hover .box-votacao {
+              right: 5px; } }
       section #ranking ul li:nth-child(2n) {
         background-color: #f2f1f1; }
       section #ranking ul li .image-entry:after {

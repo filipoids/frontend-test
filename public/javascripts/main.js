@@ -13,7 +13,6 @@ var Index = (function (window, document){
 			}
 			
 			xmlhttp.open("GET", url, true);
-			xmlhttp.overrideMimeType('text/html charset=utf-8');
 			xmlhttp.send();
 		
 		},
