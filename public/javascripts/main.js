@@ -1,4 +1,3 @@
-// your code
 var Index = (function (window, document){
 	var data;
 	var URLDATE = 'fazenda.json';
@@ -80,7 +79,7 @@ var Index = (function (window, document){
 				item.description = item.description.replace('&ordm;', 'º')
 				return item;
 			})
-			
+
 
 			var template = document.getElementById('template').innerHTML;
 			Mustache.parse(template);  
