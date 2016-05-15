@@ -1,0 +1,203 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none; }
+
+body {
+  text-align: center;
+  font-size: 12px;
+  background-color: #272727;
+  font-family: 'Montserrat', 'Arial', sans-serif; }
+  body p {
+    font-size: 12px;
+    color: #fff;
+    text-align: left;
+    margin: 13px 0 0 13px;
+    display: block; }
+
+section {
+  width: 375px;
+  position: relative;
+  margin: 150px auto 0 auto; }
+  section header {
+    position: relative;
+    width: 375px;
+    height: 52px; }
+    section header h1 {
+      position: absolute;
+      top: -127px;
+      left: 0;
+      z-index: 9; }
+      section header h1 a {
+        display: block;
+        width: 100%;
+        height: 100%; }
+    section header h2 {
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      background-color: #fff;
+      min-height: 52px;
+      line-height: 52px;
+      position: relative;
+      float: right;
+      width: 220px;
+      text-align: right;
+      padding-right: 30px;
+      color: #272727;
+      font-size: 30px;
+      font-weight: 700;
+      text-transform: uppercase; }
+  section #ranking {
+    background-color: #fff;
+    margin-top: 15px;
+    padding: 20px 0;
+    position: relative;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    position: relative;
+    z-index: 2; }
+    section #ranking ul li {
+      min-height: 82px;
+      background-color: #fff;
+      padding: 0 15px;
+      position: relative;
+      cursor: pointer; }
+      section #ranking ul li:hover {
+        background-color: #ba3638 !important;
+        transition: background-color .55s ease;
+        -webkit-transition: background-color .55s ease;
+        -moz-transition: background-color .55s ease; }
+        section #ranking ul li:hover .image-entry {
+          border-color: #fff; }
+        section #ranking ul li:hover .text-entry h2 {
+          color: #fff; }
+        section #ranking ul li:hover .text-entry p {
+          color: #330d0e; }
+        section #ranking ul li:hover .box-votacao {
+          visibility: visible;
+          right: -170px; }
+      section #ranking ul li:nth-child(2n) {
+        background-color: #f2f1f1; }
+      section #ranking ul li .image-entry:after {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        bottom: -3px;
+        right: -5px;
+        border: 1px solid #707070;
+        color: #707070;
+        font-size: 14px;
+        text-align: center;
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        background-color: #fff; }
+      section #ranking ul li:first-child .image-entry:after {
+        content: '1'; }
+      section #ranking ul li:nth-child(2) .image-entry:after {
+        content: '2'; }
+      section #ranking ul li:nth-child(3) .image-entry:after {
+        content: '3'; }
+      section #ranking ul li:nth-child(4) .image-entry:after {
+        content: '4'; }
+      section #ranking ul li:last-child .image-entry:after {
+        content: '5'; }
+      section #ranking ul li .image-entry {
+        float: left;
+        width: 65px;
+        height: 65px;
+        border: 3px solid #ba3638;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        margin: 10px 20px 0 0;
+        position: relative; }
+        section #ranking ul li .image-entry img {
+          width: 100%;
+          height: 100%;
+          border-radius: 100%;
+          -webkit-border-radius: 100%;
+          -moz-border-radius: 100%; }
+      section #ranking ul li .text-entry {
+        float: left;
+        text-align: left;
+        padding: 15px 0 0 0; }
+        section #ranking ul li .text-entry h2 {
+          font-weight: 300;
+          color: #ba3638;
+          font-size: 18px; }
+        section #ranking ul li .text-entry p {
+          margin: 0;
+          color: #909090;
+          font-size: 12px; }
+      section #ranking ul li .box-votacao {
+        position: absolute;
+        z-index: 1;
+        width: 155px;
+        height: 50px;
+        background-color: #fff;
+        top: 50%;
+        right: 0;
+        visibility: hidden;
+        margin: -25px 0 0;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        transition: all ease .25s;
+        -webkit-transition: all ease .25s;
+        -moz-transition: all ease .25s; }
+        section #ranking ul li .box-votacao:before {
+          content: "";
+          display: inline-block;
+          vertical-align: middle;
+          width: 0;
+          height: 0;
+          position: absolute;
+          top: 17px;
+          left: -7px;
+          border-top: 7px solid transparent;
+          border-bottom: 7px solid transparent;
+          border-right: 7px solid #fff; }
+        section #ranking ul li .box-votacao .gostam {
+          float: left;
+          width: 65px;
+          padding: 0;
+          height: 50px;
+          border-right: 1px solid rgba(0, 0, 0, 0.5); }
+          section #ranking ul li .box-votacao .gostam .box-header {
+            border-top-left-radius: 3px; }
+        section #ranking ul li .box-votacao .nao_gostam {
+          height: 50px;
+          width: 88px;
+          float: left;
+          border-left: 1px solid rgba(255, 255, 255, 0.5); }
+          section #ranking ul li .box-votacao .nao_gostam .box-header {
+            border-top-right-radius: 3px; }
+        section #ranking ul li .box-votacao .box-header {
+          height: 18px;
+          background-color: #ba3638; }
+          section #ranking ul li .box-votacao .box-header p {
+            color: #fff;
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 18px;
+            text-transform: uppercase;
+            margin: 0;
+            text-align: center; }
+        section #ranking ul li .box-votacao .box-body {
+          height: 31px; }
+          section #ranking ul li .box-votacao .box-body p {
+            color: #909090;
+            font-weight: 700;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 31px;
+            margin: 0;
+            text-align: center; }
